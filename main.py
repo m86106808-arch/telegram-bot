@@ -2,13 +2,14 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler
 
-TOKEN = "8960819152:AAHT20rbESHIqlupyr1taGEsybjs2CeUFRQ"
+TOKEN = "8960819152:AAFrDA1EGNaRPKDshHYR-3k4uW7UnimTPQ"
 ADMIN_ID = 52504489
 
 async def start(update: Update, context):
     user = update.effective_user
     welcome_text = f"أهلاً بك يا {user.first_name} في البوت!"
     await update.message.reply_text(welcome_text)
+    
     admin_notice = f"🔔 دخول جديد للبوت!\nالاسم: {user.first_name}\nالايدي: {user.id}"
     try:
         await context.bot.send_message(chat_id=ADMIN_ID, text=admin_notice)

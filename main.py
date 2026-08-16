@@ -2,7 +2,7 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler
 
-TOKEN = "8960819152:AAFrDA1EGNaRPKDshHYR-3k4uW7UnimTPQ"
+TOKEN = "8960819152:AAFM81loiEQhlbfc20tUwLdJE-Z65nq-qTM"
 ADMIN_ID = 52504489
 
 async def start(update: Update, context):
